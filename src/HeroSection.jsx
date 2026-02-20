@@ -1,12 +1,15 @@
 import React, { useEffect, useRef } from 'react';
-import image from "../public/image.png";
+import image from "../public/sangam_maroon.png";
 import gsap from 'gsap';
+import chakra from '../public/chakra.png'
 
 const HeroSection = () => {
   const typingRef = useRef(null);
+  const chakraRef = useRef(null);
   const hasTyped = useRef(false); // ← false initially
 
   useEffect(() => {
+    
     // Prevent double execution in Strict Mode
     if (hasTyped.current) return;
     hasTyped.current = true;
@@ -42,32 +45,65 @@ const HeroSection = () => {
     // Start typing after a small delay
     setTimeout(type, 1200);
 
-    // Cleanup (optional but good)
+    if(chakraRef.current){
+      gsap.to(chakraRef.current, {
+        rotation: 360,
+        duration: 40, 
+        repeat: -1, 
+        ease: "none",
+      });
+
+      // gsap.to(chakraRef.current, {
+      //   y: 30, 
+      //   duration: 8,
+      //   yoyo: true,
+      //   repeat: -1,
+      //   ease: "sine.inOut",
+      // });
+    }
     
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center bg-black overflow-hidden pt-20 md:pt-0">
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/70" />
+    <section className="relative min-h-screen pt-32 flex items-center justify-center bg-[#F9E9D6] overflow-hidden">
+      {/* Background overlay – adjusted to match new background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#F9E9D6]/40 via-[#F9E9D6]/10 to-[#F9E9D6]/70" />
 
-      {/* Image container – centered and constrained */}
-      <div className="relative mb-12 w-full max-w-5xl px-6 md:px-0">
-        <img
-          src={image}
-          alt="Hero visual"
-          className="w-full h-auto rounded-2xl object-cover transition-all duration-700 hover:scale-[1.02]"
-        />
+      {/* Perfect Center Container */}
+      {/* Center Wrapper */}
+      <div className="relative flex items-center justify-center w-[80%] h-full">
+
+        {/* Center Group Container */}
+        <div className="relative w-[90vw] max-w-[900px] aspect-square flex items-center justify-center">
+
+          {/* Chakra */}
+          <img
+            ref={chakraRef}
+            src={chakra}
+            alt="chakra"
+            className='absolute w-full h-full object-contain opacity-30'
+          />
+
+          {/* Sangam Logo */}
+          <img
+            src={image}
+            alt="Sangam Logo"
+            className="relative w-[85%] h-[85%] object-contain z-10"
+          />
+
+        </div>
+
       </div>
 
-      {/* Typing text – placed cleanly below image */}
-      <div className="relative text-center px-6">
+      {/* Typing Text */}
+      <div className="absolute bottom-24 text-center px-6 z-20">
         <p
           ref={typingRef}
-          className="text-3xl md:text-4xl lg:text-3xl font-extrabold tracking-wide"
-          style={{ minHeight: "1.5em" }} // prevents layout jump
+          className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-wide text-[#A03232]"
+          style={{ minHeight: "1.5em" }}
         />
       </div>
+
     </section>
   );
 };
