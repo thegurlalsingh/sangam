@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import Preloader from './PreLoader.jsx';
+import Preloader from './Preloader.jsx';
 import Navbar from './Navbar.jsx';
 import HeroSection from './HeroSection.jsx';
 import AboutUs from './AboutUs.jsx';
