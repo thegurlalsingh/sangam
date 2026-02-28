@@ -10,11 +10,11 @@ const AboutUs = () => {
           {/* Photo – left on desktop, full-width above text on mobile */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#A03232]/30 order-1 md:order-none">
             <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Five_Feet_Apart_%282019_poster%29.png/250px-Five_Feet_Apart_%282019_poster%29.png"
+              src="../public/AHP_9163.JPG"
               alt="NSS Bennett Team / Activity"
               className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#F9E9D6]/60 to-transparent" />
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-[#F9E9D6]/60 to-transparent" /> */}
           </div>
 
           {/* Text content */}
@@ -23,7 +23,7 @@ const AboutUs = () => {
               About <span className="text-[#A03232]">NSS Bennett</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl leading-relaxed text-center md:text-left text-black">
-              Bennett University is a leading private institution located in Greater Noida, established with the vision of redefining higher education in India. Backed by the Times Group, the university combines academic excellence with industry exposure, offering programs in engineering, management, law, media, and liberal arts. With state-of-the-art infrastructure, global collaborations, and a strong focus on research and innovation, Bennett University fosters a culture of critical thinking, creativity, and entrepreneurship. Its industry-driven curriculum, experienced faculty, and vibrant campus life empower students to develop practical skills, leadership qualities, and a global perspective, preparing them to excel in an ever-evolving world.
+              The National Service Scheme (NSS) at Bennett University is a student-driven initiative that embodies the spirit of service, responsibility, and leadership. It provides students with opportunities to engage in community outreach, social awareness campaigns, and creative projects that foster empathy and civic engagement. NSS Bennett is not only about volunteering but also about nurturing teamwork, discipline, and innovation, ensuring that students grow into socially conscious leaders who contribute meaningfully to society.
             </p>
           </div>
         </div>
@@ -36,20 +36,22 @@ const AboutUs = () => {
               About <span className="text-[#A03232]">Sangam</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl leading-relaxed text-center md:text-left text-black">
-              Sangam is the flagship cultural fest of Bennett University, bringing together creativity, talent, and energy from across the nation. It is a celebration of art, music, dance, drama, fashion, literature, and technology, providing a platform for students to showcase their skills and passion. With exciting events, celebrity performances, workshops, competitions, and a vibrant atmosphere, Sangam promises an unforgettable experience filled with joy, inspiration, and memories.
+              Sangam is the meeting point of countless streams of creativity, innovation, and culture just like rivers converging to form a powerful flow. It is a confluence of stories, talents, and diverse voices, each carrying its own rhythm yet blending seamlessly into one vibrant current. Over three days, this festival transforms Bennett University into a living canvas, where hackathons spark innovation, debates sharpen intellect, art speaks louder than words, and cultural nights ignite joy and unity.
+              It is not merely an event, but an experience a river of ideas and emotions flowing together, creating a tapestry of diversity and celebration. Sangam embodies the spirit of NSS Bennett, reminding us that service, creativity, and community can merge into something timeless. It is a gathering where every participant adds their drop to the stream, making the current stronger, brighter, and unforgettable.
             </p>
           </div>
 
           {/* Photo – right on desktop, below text on mobile */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#A03232]/40 order-1 md:order-none">
             <img
-              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&auto=format&fit=crop&q=80"
+              src="../public/Sangam_Full_HD_Without_BG.png"
               alt="Sangam Fest / Cultural Event"
               className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#F9E9D6]/60 to-transparent" />
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-[#F9E9D6]/60 to-transparent" /> */}
           </div>
         </div>
+
       </div>
     </section>
   );

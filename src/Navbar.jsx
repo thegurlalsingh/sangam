@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar with solid background color – positioned a bit below top */}
-      <nav className="fixed top-5 left-10 right-10 z-50 bg-[#F9E9D6] border border-[#A03232]/20 shadow-xl rounded-2xl">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F9E9D6] border border-[#A03232]/20 shadow-xl p-2">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-5 flex items-center justify-between">
           {/* Logo */}
           <div className="text-3xl font-bold tracking-tight">
@@ -40,7 +40,9 @@ const Navbar = () => {
             >
               Event Details
             </Link>
-            <Link
+
+
+            {/* <Link
               to="/guests"
               className="text-[#A03232] hover:text-black text-lg font-medium transition-colors duration-300"
               onClick={closeMenu}
@@ -53,7 +55,9 @@ const Navbar = () => {
               onClick={closeMenu}
             >
               Sponsors
-            </Link>
+            </Link> */}
+
+
             <Link
               to="/contact"
               className="text-[#A03232] hover:text-black text-lg font-medium transition-colors duration-300"
@@ -114,7 +118,9 @@ const Navbar = () => {
           >
             Event Details
           </Link>
-          <Link
+
+
+          {/* <Link
             to="/guests"
             className="text-2xl text-[#A03232] hover:text-black transition-colors duration-300"
             onClick={closeMenu}
@@ -127,7 +133,9 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             Sponsors
-          </Link>
+          </Link> */}
+
+          
           <Link
             to="/contact"
             className="text-2xl text-[#A03232] hover:text-black transition-colors duration-300"

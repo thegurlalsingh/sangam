@@ -1,34 +1,41 @@
 @import "tailwindcss";
 
-*{
-    
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
- 
 
-section, main {
+section,
+main {
   padding-top: 120px;
 }
+
 @media (min-width: 768px) {
-  section, main {
+  section,
+  main {
     padding-top: 140px;
   }
 }
 
 /* Force scrollability on root elements */
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
-  overflow-x: hidden;       /* no horizontal scroll */
+  overflow-x: hidden;           /* no horizontal scroll */
   overflow-y: auto !important;  /* allow vertical scroll */
 }
 
 /* Make sure main wrapper allows overflow */
-.app-wrapper, main, section {
+.app-wrapper,
+main,
+section {
   overflow-y: visible !important;
   min-height: 100vh;
 }
 
 /* Remove any blanket overflow-hidden from fixed/fullscreen parents */
-.fixed, .absolute, .inset-0 {
+.fixed,
+.absolute,
+.inset-0 {
   overflow: visible !important;
 }

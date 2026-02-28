@@ -20,10 +20,15 @@ const Contact = () => {
             <h3 className="text-2xl font-semibold text-[#A03232] mb-3">Email</h3>
             <p className="text-black">nss@bennett.edu.in</p>
           </div>
+
           <div>
             <h3 className="text-2xl font-semibold text-[#A03232] mb-3">Phone</h3>
-            <p className="text-black">+91 99999 99999</p>
+            <div>
+              <p className="text-black">Akshat Goyal - +91 94160 04028</p>
+              <p className="text-black">Anushka Dhawan - +91 99883 24046</p>
+            </div>
           </div>
+
           <div>
             <h3 className="text-2xl font-semibold text-[#A03232] mb-3">Location</h3>
             <p className="text-black">Bennett University, Greater Noida</p>
@@ -40,7 +45,7 @@ const Contact = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Bennett University Location"
-            ></iframe>
+            />
           </div>
         </div>
       </div>

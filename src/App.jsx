@@ -7,6 +7,8 @@ import AboutUs from './AboutUs.jsx';
 import EventDetails from './EventDetails.jsx';
 import Contact from './Contact.jsx';
 import { Routes, Route } from 'react-router-dom';
+import Guests from './Guests.jsx';
+import Sponsors from './Sponsors.jsx';
 
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -43,6 +45,8 @@ const App = () => {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/events" element={<EventDetails />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/guests" element={<Guests />} />
+          <Route path="/sponsors" element={<Sponsors />} />
 
           {/* 404 fallback */}
           <Route path="*" element={

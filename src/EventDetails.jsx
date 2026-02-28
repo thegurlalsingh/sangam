@@ -1,9 +1,11 @@
 import React from 'react';
-import VerticalTimeline from './ExperienceTimeline.jsx';
+import VerticalTimelineDay1 from './ExperienceTimelineDay1.jsx';
+import VerticalTimelineDay2 from './ExperienceTimelineDay2.jsx';
+import VerticalTimelineDay3 from './ExperienceTimelineDay3.jsx';
 
 const EventDetails = () => {
   return (
-    <section className="w-full bg-[#F9E9D6] text-[#A03232] pt-32 md:pt-40 pb-24 px-6 sm:px-10 lg:px-16">
+    <section className="w-full bg-[#F9E9D6] text-[#A03232] pt-40 md:pt-40 pb-24 px-6 sm:px-10 lg:px-16">
       <div className="max-w-7xl mx-auto space-y-20 md:space-y-28">
         {/* Optional centered heading – remove if not needed */}
         <div className="text-center mb-12 md:mb-16">
@@ -13,9 +15,9 @@ const EventDetails = () => {
         </div>
 
         {/* Your timelines */}
-        <VerticalTimeline />
-        <VerticalTimeline />
-        <VerticalTimeline />
+        <VerticalTimelineDay1 />
+        <VerticalTimelineDay2 />
+        <VerticalTimelineDay3 />
       </div>
     </section>
   );
