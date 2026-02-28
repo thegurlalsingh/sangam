@@ -1,4 +1,6 @@
 import React from 'react';
+import group from "../public/AHP_9163.JPG";
+import logo from "../public/Sangam_Full_HD_Without_BG.png";
 
 const AboutUs = () => {
   return (
@@ -10,7 +12,7 @@ const AboutUs = () => {
           {/* Photo – left on desktop, full-width above text on mobile */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#A03232]/30 order-1 md:order-none">
             <img
-              src="../public/AHP_9163.JPG"
+              src={group}
               alt="NSS Bennett Team / Activity"
               className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
             />
@@ -44,7 +46,7 @@ const AboutUs = () => {
           {/* Photo – right on desktop, below text on mobile */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#A03232]/40 order-1 md:order-none">
             <img
-              src="../public/Sangam_Full_HD_Without_BG.png"
+              src={logo}
               alt="Sangam Fest / Cultural Event"
               className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
             />
